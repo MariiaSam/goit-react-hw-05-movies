@@ -1,15 +1,15 @@
 import { useLocation, Link } from 'react-router-dom';
 import { defaultImg } from 'helpers/defaultImg';
-import { MovieListt, Item, Img, Title } from './MovieList.styled';
+import { MovieListt, Item, Img, MovieTitle } from './MovieList.styled';
 
-export const MovieList = ({ movies }) => {
+ const MovieList = ({ movies }) => {
   const location = useLocation();
 
   return (
     <>
       <MovieListt>
         {movies.map(({ id, poster_path, title }) => (
-          <Link key={id} to={`/movies/{id}`} state={{ from: location }}>
+          <Link key={id} to={`/movies/${id}`} state={{ from: location }}>
             <Item>
               <Img
                 src={
@@ -19,7 +19,7 @@ export const MovieList = ({ movies }) => {
                 }
                 alt="poster"
               />
-              <Title> {title} </Title>
+              <MovieTitle> {title} </MovieTitle>
             </Item>
           </Link>
         ))}
@@ -27,3 +27,5 @@ export const MovieList = ({ movies }) => {
     </>
   );
 };
+
+export default MovieList;

@@ -1,4 +1,4 @@
-import axios, { Axios } from 'axios';
+import axios from "axios";
 
 const API = '3990fcc1741379f5b1bcbc308aa7d8b3';
 const BASE_URL = 'https://api.themoviedb.org/3/';
@@ -6,9 +6,7 @@ axios.defaults.baseURL = BASE_URL;
 
 export const getTrending = async page => {
   const url = `trending/movie/day?language=en-US&&api_key=${API}&page=${page}`;
- 
-  const movies = await axios(url)
-  
+  const movies = await axios(url)  
   return movies;
 };
 

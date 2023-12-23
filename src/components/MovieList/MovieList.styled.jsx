@@ -24,7 +24,7 @@ export const Img = styled.img`
   max-width: 100%;
 `;
 
-export const Title = styled.title`
+export const MovieTitle = styled.h1`
   padding: 10px;
   margin: 0 auto;
   text-align: center;
@@ -37,4 +37,5 @@ export const Title = styled.title`
   padding-bottom: 10px;
   padding-top: 10px;
   text-align: center;
+  color: white;
 `;
