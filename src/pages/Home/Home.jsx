@@ -32,13 +32,14 @@ useEffect(() => {
       .then(({ data: { results } }) => {
         setData(prevData => [...prevData, ...arrMovies(results)]);
       })
-      .catch(error => console.log(`fetchTrendigMovies:${error}`));
+      .catch(error => console.log(`getTrending:${error}`));
   }, [page]);
 
 
   const onLoadMore = () => {
     setPage(prevPage => prevPage + 1);
   };
+  
   return (
     <>
       <Title>Trending today</Title>

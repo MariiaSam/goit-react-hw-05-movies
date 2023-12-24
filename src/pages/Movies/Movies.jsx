@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import { useSearchParams } from 'react-router-dom'
-
-import { SearchBar } from "components/SearchBar/SearchBar";
 import { getSearchMovies } from "services/api";
 import MovieList from "components/MovieList/MovieList";
+
+import { SearchBar } from "components/SearchBar/SearchBar";
 
 const Movies = () => {
     const [data, setData] = useState([])
@@ -21,10 +21,10 @@ const Movies = () => {
 
         if(!query) return
         getSearchMovies (query, page)
-        .then(({ results}) => {
+        .then(({ results }) => {
             setData(results)
         })
-        .catch(error => console.log(`fetchTrendigMovies:${error}`));
+        .catch(error => console.log(`getSearchMovies:${error}`));
     }, [searchParams, page])
     
     return (

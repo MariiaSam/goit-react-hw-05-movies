@@ -1,14 +1,16 @@
 import { Outlet } from 'react-router-dom';
 import { Suspense } from 'react';
+import { Container } from 'components/Container/Container';
+
 import { Loader } from 'components/Loader/Loader';
 import {
   Header,
   HeaderNavigation,
   HeaderList,
   StyledNavLink,
-  Main,
-  Container,
-} from './Layout.styled';
+  Main
+
+}from './Layout.styled';
 
 
 export const Layout = () => {

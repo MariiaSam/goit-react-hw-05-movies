@@ -30,7 +30,7 @@ export const LinkToBack = styled(Link)`
   transition: color 0.5s ease-in-out;
 `;
 
-export const ImgDeteils = styled.img`
+export const ImgDetails = styled.img`
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px;
   height: auto;

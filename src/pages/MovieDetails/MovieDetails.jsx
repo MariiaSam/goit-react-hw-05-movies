@@ -3,13 +3,13 @@ import { defaultImg } from 'helpers/defaultImg';
 import { useEffect, useState } from 'react';
 
 import {Link, Outlet, useLocation, useParams } from 'react-router-dom';
-import { LinkToBack, Wrap, ImgDeteils, WraperText, Title } from './MovieDetails.styled';
+import { LinkToBack, Wrap, ImgDetails, WraperText, Title } from './MovieDetails.styled';
 
 const MovieDetails = () => {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState([])
 
-  const location = useLocation();
-  const { movieId } = useParams();
+  const location = useLocation()
+  const { movieId } = useParams()
 
   useEffect(() => {
     getMoviesDetails(movieId)
@@ -34,7 +34,7 @@ const MovieDetails = () => {
     <Wrap>
       <LinkToBack to={location?.state?.from ?? '/'}>Back to products</LinkToBack>
     <div>
-        <ImgDeteils src={poster_path ? `https://image.tmdb.org/t/p/w500${poster_path}` : defaultImg} alt={title} />
+        <ImgDetails src={poster_path ? `https://image.tmdb.org/t/p/w500${poster_path}` : defaultImg} alt={title} />
     </div>
 
     <WraperText>
@@ -56,10 +56,7 @@ const MovieDetails = () => {
               </li>
             </ul>
             <Outlet/>
-
-
     </WraperText>
-   
     </Wrap>
   );
 };

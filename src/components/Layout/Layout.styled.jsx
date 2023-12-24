@@ -25,13 +25,10 @@ export const Header = styled.header`
 
 export const HeaderNavigation = styled.nav`
   display: flex;
-
   width: 1280px;
   gap: 40px;
-
   margin-left: auto;
   margin-right: auto;
-
   padding: 40px;
 `;
 
@@ -49,7 +46,7 @@ export const StyledNavLink = styled(NavLink)`
 
   &.active {
     border-radius: 1px solid;
-    background-color: #e68a48;
+    background-color: #f3bc94;
     border-radius: 100px;
   }
 `;
@@ -63,9 +60,9 @@ export const Main = styled.main`
   min-height: 100vh;
 `;
 
-export const Container = styled.div`
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1280px;
-  padding-top: 40px;
-`;
+// export const Container = styled.div`
+//   margin-left: auto;
+//   margin-right: auto;
+//   max-width: 1280px;
+//   padding-top: 40px;
+// `;
