@@ -1,6 +1,5 @@
 import { Outlet } from 'react-router-dom';
 import { Suspense } from 'react';
-import { Container } from 'components/Container/Container';
 
 import { Loader } from 'components/Loader/Loader';
 import {
@@ -8,7 +7,7 @@ import {
   HeaderNavigation,
   HeaderList,
   StyledNavLink,
-  Main
+  Main, Container
 
 }from './Layout.styled';
 

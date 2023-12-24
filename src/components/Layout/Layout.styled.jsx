@@ -54,15 +54,15 @@ export const StyledNavLink = styled(NavLink)`
 export const Main = styled.main`
   height: 100%;
   padding-bottom: 60px;
-  background-image: url('https://maxpolyakov.com/wp-content/uploads/2022/05/esa-and-ukraine.jpg');
+  background-image: url('https://images.pexels.com/photos/631477/pexels-photo-631477.jpeg?auto=compress&cs=tinysrgb&w=600.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
 `;
 
-// export const Container = styled.div`
-//   margin-left: auto;
-//   margin-right: auto;
-//   max-width: 1280px;
-//   padding-top: 40px;
-// `;
+export const Container = styled.div`
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+  padding-top: 40px;
+`;

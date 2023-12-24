@@ -14,7 +14,7 @@ const MovieDetails = () => {
   useEffect(() => {
     getMoviesDetails(movieId)
       .then(({ data }) => {
-        setData(data);
+        setData(data || {});
       })
       .catch(error => {
         console.log(`getMoviesDetails: ${error}`);
@@ -32,16 +32,16 @@ const MovieDetails = () => {
 
   return (
     <Wrap>
-      <LinkToBack to={location?.state?.from ?? '/'}>Back to products</LinkToBack>
+      <LinkToBack to={location?.state?.from ?? '/'}>Back to movies</LinkToBack>
     <div>
-        <ImgDetails src={poster_path ? `https://image.tmdb.org/t/p/w500${poster_path}` : defaultImg} alt={title} />
+        <ImgDetails src={poster_path ? `https://image.tmdb.org/t/p/w500${poster_path}` : defaultImg} alt={title} />        
     </div>
 
     <WraperText>
-        <Title>{data}{release_data}</Title>
+        <Title>{title}{release_data}</Title>
         <p>User Score: {vote_average} </p>
         <h2>Overview:</h2>
-        <p>User Score: {overview}</p>
+        <p>{overview}</p>
         <h2>Genre</h2>
         <p>{genres.map(genre => genre.name).join(', ')}</p>
         <h2 >Additional information</h2>
