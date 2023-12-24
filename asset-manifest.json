@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/goit-react-hw-05-movies/static/css/main.608ebfd6.css",
-    "main.js": "/goit-react-hw-05-movies/static/js/main.7c5e410f.js",
-    "static/js/68.54b1c704.chunk.js": "/goit-react-hw-05-movies/static/js/68.54b1c704.chunk.js",
-    "static/js/703.3583774f.chunk.js": "/goit-react-hw-05-movies/static/js/703.3583774f.chunk.js",
+    "main.js": "/goit-react-hw-05-movies/static/js/main.f45573c3.js",
+    "static/js/68.3a748348.chunk.js": "/goit-react-hw-05-movies/static/js/68.3a748348.chunk.js",
+    "static/js/703.bb5b9ce5.chunk.js": "/goit-react-hw-05-movies/static/js/703.bb5b9ce5.chunk.js",
     "static/js/257.3d602256.chunk.js": "/goit-react-hw-05-movies/static/js/257.3d602256.chunk.js",
     "static/js/194.b3ca37c6.chunk.js": "/goit-react-hw-05-movies/static/js/194.b3ca37c6.chunk.js",
     "static/js/604.92eeca8b.chunk.js": "/goit-react-hw-05-movies/static/js/604.92eeca8b.chunk.js",
     "index.html": "/goit-react-hw-05-movies/index.html",
     "main.608ebfd6.css.map": "/goit-react-hw-05-movies/static/css/main.608ebfd6.css.map",
-    "main.7c5e410f.js.map": "/goit-react-hw-05-movies/static/js/main.7c5e410f.js.map",
-    "68.54b1c704.chunk.js.map": "/goit-react-hw-05-movies/static/js/68.54b1c704.chunk.js.map",
-    "703.3583774f.chunk.js.map": "/goit-react-hw-05-movies/static/js/703.3583774f.chunk.js.map",
+    "main.f45573c3.js.map": "/goit-react-hw-05-movies/static/js/main.f45573c3.js.map",
+    "68.3a748348.chunk.js.map": "/goit-react-hw-05-movies/static/js/68.3a748348.chunk.js.map",
+    "703.bb5b9ce5.chunk.js.map": "/goit-react-hw-05-movies/static/js/703.bb5b9ce5.chunk.js.map",
     "257.3d602256.chunk.js.map": "/goit-react-hw-05-movies/static/js/257.3d602256.chunk.js.map",
     "194.b3ca37c6.chunk.js.map": "/goit-react-hw-05-movies/static/js/194.b3ca37c6.chunk.js.map",
     "604.92eeca8b.chunk.js.map": "/goit-react-hw-05-movies/static/js/604.92eeca8b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.608ebfd6.css",
-    "static/js/main.7c5e410f.js"
+    "static/js/main.f45573c3.js"
   ]
 }
