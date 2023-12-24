@@ -13,7 +13,6 @@ export const Header = styled.header`
   padding-top: 12px;
   padding-bottom: 12px;
   color: #fff;
-
 `;
 
 export const SearchForm = styled.form`
@@ -26,8 +25,6 @@ export const SearchForm = styled.form`
   overflow: hidden;
   border-radius: 100px;
 `;
-
-
 
 export const SearchFormInput = styled.input`
   display: inline-block;

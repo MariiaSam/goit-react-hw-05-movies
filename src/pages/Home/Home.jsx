@@ -7,12 +7,11 @@ import { Button } from 'components/Button/Button';
 
 import { Title } from './Home.styled';
 
-
 const Home = () => {
   const [data, setData] = useState([]);
   const [page, setPage] = useState(1);
 
-useEffect(() => {
+  useEffect(() => {
     getTrending(page)
       .then(({ data: { results } }) => {
         setData(prevData => [...prevData, ...arrMovies(results)]);
@@ -20,11 +19,10 @@ useEffect(() => {
       .catch(error => console.log(`getTrending:${error}`));
   }, [page]);
 
-
   const onLoadMore = () => {
     setPage(prevPage => prevPage + 1);
   };
-  
+
   return (
     <>
       <Title>Trending today</Title>

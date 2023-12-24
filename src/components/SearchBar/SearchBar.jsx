@@ -25,7 +25,6 @@ export const SearchBar = ({ onSubmit }) => {
   return (
     <Header>
       <SearchForm onSubmit={handleSubmit}>
-       
         <SearchFormInput
           type="text"
           autoComplete="off"
@@ -33,7 +32,7 @@ export const SearchBar = ({ onSubmit }) => {
           placeholder="Введи назву фільму"
           value={query}
           onChange={hanlerChange}
-        /> 
+        />
         <SearchFormBtn type="submit">
           <CiSearch size="24" />
         </SearchFormBtn>
@@ -41,4 +40,3 @@ export const SearchBar = ({ onSubmit }) => {
     </Header>
   );
 };
-

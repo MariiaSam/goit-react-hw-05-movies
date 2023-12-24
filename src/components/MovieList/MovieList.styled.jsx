@@ -20,7 +20,6 @@ export const Img = styled.img`
   height: auto;
   width: auto;
   border-radius: 5px;
-
 `;
 
 export const MovieTitle = styled.h1`

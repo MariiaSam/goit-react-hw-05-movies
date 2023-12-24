@@ -54,7 +54,7 @@ export const StyledNavLink = styled(NavLink)`
 export const Main = styled.main`
   height: 100%;
   padding-bottom: 60px;
- background-size: cover;
+  background-size: cover;
   background-repeat: repeat;
 `;
 

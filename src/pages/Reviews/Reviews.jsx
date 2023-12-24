@@ -4,9 +4,9 @@ import { useParams } from 'react-router-dom';
 import { Wrapper, Title, Item, TextAutor } from './Reviews.styled';
 
 const Reviews = () => {
-  const [data, setData] = useState([])
-  const [isLoading, setIsLoading] = useState(false)
-  const { id } = useParams()
+  const [data, setData] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const { id } = useParams();
 
   useEffect(() => {
     setIsLoading(true);
@@ -41,4 +41,4 @@ const Reviews = () => {
   );
 };
 
-export default Reviews
+export default Reviews;

@@ -22,8 +22,6 @@ export const LinkToBack = styled(Link)`
   padding: 5px;
   margin-bottom: 10px;
   align-items: center;
-
-  
 `;
 
 export const ImgDetails = styled.img`
