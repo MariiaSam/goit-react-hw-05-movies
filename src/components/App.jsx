@@ -7,6 +7,7 @@ import { Layout } from "./Layout/Layout";
 
 const Home = lazy(() => import ('pages/Home/Home'))
 const Movies = lazy(() => import ('pages/Movies/Movies'))
+const MovieDetails = lazy(() => import('pages/MovieDetails/MovieDetails'))
 
 
 export const App = () => {
@@ -16,6 +17,7 @@ export const App = () => {
           <Route path="/" element={<Layout/>}>
               <Route index element={<Home/>}/>
               <Route path='/movies' element={<Movies/>}/>
+              <Route path="/movie/:movieId" element={<MovieDetails/>}/>
 
           </Route>
 

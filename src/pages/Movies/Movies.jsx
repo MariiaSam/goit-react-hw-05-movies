@@ -8,7 +8,7 @@ import MovieList from "components/MovieList/MovieList";
 const Movies = () => {
     const [data, setData] = useState([])
 
-    // const [page] = useState(1)
+    const [page] = useState(1)
 
     const [searchParams, setSearchParams] = useSearchParams()
 
@@ -20,12 +20,12 @@ const Movies = () => {
         const query = searchParams.get('query') || ''
 
         if(!query) return
-        getSearchMovies (query).then(({ results}) => {
-        
+        getSearchMovies (query, page)
+        .then(({ results}) => {
             setData(results)
         })
         .catch(error => console.log(`fetchTrendigMovies:${error}`));
-    }, [searchParams])
+    }, [searchParams, page])
     
     return (
     <>

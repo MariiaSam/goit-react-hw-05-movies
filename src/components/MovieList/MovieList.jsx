@@ -3,14 +3,14 @@ import { defaultImg } from 'helpers/defaultImg';
 import { MovieListt, Item, Img, MovieTitle } from './MovieList.styled';
 
  const MovieList = ({ movies }) => {
-  const location = useLocation();
+  const { pathname } = useLocation();
 
   return (
     <>
       <MovieListt>
         {movies.map(({ id, poster_path, title }) => (
-          <Link key={id} to={`/movies/${id}`} state={{ from: location }}>
-            <Item>
+        <Item key={id}>
+          <Link  to={`/movies/${id}`} state={{ from: pathname  }}>
               <Img
                 src={
                   poster_path
@@ -20,8 +20,8 @@ import { MovieListt, Item, Img, MovieTitle } from './MovieList.styled';
                 alt="poster"
               />
               <MovieTitle> {title} </MovieTitle>
-            </Item>
-          </Link>
+          </Link>  
+          </Item>
         ))}
       </MovieListt>
     </>

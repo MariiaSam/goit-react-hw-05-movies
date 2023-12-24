@@ -30,7 +30,7 @@ export const SearchBar = ({ onSubmit }) => {
           type="text"
           autoComplete="off"
           autoFocus
-          placeholder="Enter title moovie"
+          placeholder="Введи назву фільму"
           value={query}
           onChange={hanlerChange}
         /> 

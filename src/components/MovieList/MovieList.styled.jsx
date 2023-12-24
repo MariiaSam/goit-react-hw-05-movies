@@ -27,12 +27,9 @@ export const Img = styled.img`
 export const MovieTitle = styled.h1`
   padding: 10px;
   margin: 0 auto;
-  text-align: center;
   font-size: 20px;
-  font-style: none;
   font-weight: 700;
   height: 100%;
-  justify-content: center;
   margin-top: 10px;
   padding-bottom: 10px;
   padding-top: 10px;
