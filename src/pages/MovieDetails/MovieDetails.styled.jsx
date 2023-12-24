@@ -13,21 +13,15 @@ export const Wrap = styled.div`
 `;
 
 export const LinkToBack = styled(Link)`
-  display: flex;
-  gap: 5px;
-
-  text-align: center;
-
   color: #fff;
   text-decoration: none;
-  font-size: 22px;
-  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 10px;
 
-  border-radius: 20px;
   padding: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   align-items: center;
-  transition: color 0.5s ease-in-out;
 `;
 
 export const ImgDetails = styled.img`
@@ -47,6 +41,21 @@ export const WraperText = styled.div`
 `;
 
 export const Title = styled.h2`
-      margin-bottom: 30px;
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: bold;
+`;
 
-`
+export const TitleText = styled.h2`
+  margin-bottom: 30px;
+  font-size: 24;
+  font-weight: bold;
+`;
+
+export const TextP = styled.p`
+  padding-bottom: 20px;
+  font-size: 20px;
+`;
+export const AddInf = styled.h2`
+  padding-bottom: 20px;
+`;
