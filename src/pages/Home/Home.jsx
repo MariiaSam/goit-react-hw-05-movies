@@ -12,21 +12,6 @@ const Home = () => {
   const [data, setData] = useState([]);
   const [page, setPage] = useState(1);
 
-//   useEffect(() => {
-//     getTrending(page)
-//       .then(response => {
-//         const trendingToDay = response?.trendingToDay;
-  
-//         if (trendingToDay && trendingToDay.results) {
-//           setData(prevData => [...prevData, ...arrMovies(trendingToDay.results)]);
-//         } else {
-//           console.log("Invalid response format:", response);
-//         }
-//       })
-//       .catch(error => console.log(`getTrending: ${error}`));
-//   }, [page]);
-
-
 useEffect(() => {
     getTrending(page)
       .then(({ data: { results } }) => {

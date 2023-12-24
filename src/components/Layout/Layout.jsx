@@ -7,12 +7,11 @@ import {
   HeaderNavigation,
   HeaderList,
   StyledNavLink,
-  Main, Container
+  Main,
+  Container,
+} from './Layout.styled';
 
-}from './Layout.styled';
-
-
- const Layout = () => {
+const Layout = () => {
   return (
     <>
       <Header>
@@ -39,4 +38,4 @@ import {
   );
 };
 
-export default Layout
+export default Layout;

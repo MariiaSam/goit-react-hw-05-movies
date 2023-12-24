@@ -13,7 +13,7 @@ export const Wrap = styled.div`
 `;
 
 export const LinkToBack = styled(Link)`
-  color: #fff;
+  color: #e55b5b;
   text-decoration: none;
   font-size: 30px;
   font-weight: bold;
@@ -22,6 +22,8 @@ export const LinkToBack = styled(Link)`
   padding: 5px;
   margin-bottom: 10px;
   align-items: center;
+
+  
 `;
 
 export const ImgDetails = styled.img`

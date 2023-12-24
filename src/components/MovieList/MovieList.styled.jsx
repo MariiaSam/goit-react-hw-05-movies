@@ -33,5 +33,7 @@ export const MovieTitle = styled.h1`
   padding-bottom: 10px;
   padding-top: 10px;
   text-align: center;
-  color: white;
+  color: #842323;
+  justify-content: center;
+  text-align: center;
 `;
