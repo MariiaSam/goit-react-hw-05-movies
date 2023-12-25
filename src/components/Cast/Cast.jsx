@@ -23,6 +23,11 @@ const Cast = () => {
     setIsLoading(true);
     getCast(id)
       .then(({ cast }) => {
+        if (cast && cast.lenght > 0) {
+        setData ([...cast])
+      } else {
+        console.log('Cast data is empty');
+      }
         setData([...cast]);
       })
       .catch(error => console.log(error))
