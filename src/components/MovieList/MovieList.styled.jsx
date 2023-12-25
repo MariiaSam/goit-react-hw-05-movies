@@ -13,6 +13,14 @@ export const Item = styled.li`
   display: flex;
   flex-direction: column;
   padding: 10px;
+  transition-duration: 0.2s;
+  transform: scale(0.9);
+
+  &:hover,
+  &:focus {
+    transform: scale(1);
+;
+  }
 `;
 
 export const Img = styled.img`
@@ -20,6 +28,8 @@ export const Img = styled.img`
   height: auto;
   width: auto;
   border-radius: 5px;
+
+  
 `;
 
 export const MovieTitle = styled.h1`
