@@ -3,14 +3,14 @@ import { defaultImg } from 'helpers/defaultImg';
 import { MovieListt, Item, Img, MovieTitle } from './MovieList.styled';
 
 const MovieList = ({ movies }) => {
-  const { pathname } = useLocation();
+  const location  = useLocation();
 
   return (
     <>
       <MovieListt>
         {movies.map(({ id, poster_path, title }) => (
           <Item key={id}>
-            <Link to={`/movie/${id}`} state={{ from: pathname }}>
+            <Link to={`/movie/${id}`} state={{ from: location }}>
               <Img
                 src={
                   poster_path

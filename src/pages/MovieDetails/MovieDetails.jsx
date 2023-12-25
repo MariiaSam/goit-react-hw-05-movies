@@ -19,7 +19,7 @@ const MovieDetails = () => {
 
   const location = useLocation();
   const { id } = useParams();
-
+  
   useEffect(() => {
     getMoviesDetails(id)
       .then(({ data }) => {
@@ -29,6 +29,7 @@ const MovieDetails = () => {
         console.log(`getMoviesDetails: ${error}`);
       });
   }, [id]);
+  
 
   const {
     title,
@@ -41,7 +42,7 @@ const MovieDetails = () => {
 
   return (
     <Wrap>
-      <LinkToBack to={location?.state?.from ?? '/'}>Back to movies</LinkToBack>
+      <LinkToBack to={location?.state?.from ?? '/' }>Back to movies</LinkToBack>
       <div>
         <ImgDetails
           src={
@@ -76,8 +77,10 @@ const MovieDetails = () => {
             </Link>
           </li>
         </ul>
+        </WraperText>
+        
         <Outlet />
-      </WraperText>
+        
     </Wrap>
   );
 };

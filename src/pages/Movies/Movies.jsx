@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useSearchParams } from 'react-router-dom';
+import { useSearchParams, useLocation } from 'react-router-dom';
 import { getSearchMovies } from 'services/api';
 import MovieList from 'components/MovieList/MovieList';
 
@@ -9,7 +9,7 @@ const Movies = () => {
   const [data, setData] = useState([]);
 
   const [page] = useState(1);
-
+  const location = useLocation();
   const [searchParams, setSearchParams] = useSearchParams();
 
   const handlerSubmit = value => {
@@ -30,7 +30,7 @@ const Movies = () => {
   return (
     <>
       <SearchBar onSubmit={handlerSubmit} />
-      {data.length > 0 && <MovieList movies={data} />}
+      {data.length > 0 && <MovieList movies={data} location={location}/>}
     </>
   );
 };
